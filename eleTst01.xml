@@ -45,23 +45,32 @@
                   </block>
                 </value>
                 <next>
-                  <block type="variables_set" id="62" inline="true">
-                    <field name="VAR">i</field>
-                    <value name="VALUE">
-                      <block type="math_arithmetic" id="69" inline="true">
-                        <field name="OP">ADD</field>
-                        <value name="A">
-                          <block type="variables_get" id="74">
-                            <field name="VAR">i</field>
-                          </block>
-                        </value>
-                        <value name="B">
-                          <block type="math_number" id="81">
-                            <field name="NUM">1</field>
+                  <block type="robot_delay" id="92" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="99">
+                        <field name="NUM">500</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="variables_set" id="62" inline="true">
+                        <field name="VAR">i</field>
+                        <value name="VALUE">
+                          <block type="math_arithmetic" id="69" inline="true">
+                            <field name="OP">ADD</field>
+                            <value name="A">
+                              <block type="variables_get" id="74">
+                                <field name="VAR">i</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="math_number" id="81">
+                                <field name="NUM">1</field>
+                              </block>
+                            </value>
                           </block>
                         </value>
                       </block>
-                    </value>
+                    </next>
                   </block>
                 </next>
               </block>
