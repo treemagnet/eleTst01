@@ -1,93 +1,93 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="expansion_servopower" id="6" x="7" y="5">
+  <block type="expansion_servopower" id="1" x="7" y="5">
     <field name="SERVO">ON</field>
     <next>
-      <block type="expansion_elevation" id="100" inline="true">
+      <block type="expansion_elevation" id="2" inline="true">
         <value name="NUMBER">
-          <block type="math_number" id="103">
+          <block type="math_number" id="3">
             <field name="NUM">50</field>
           </block>
         </value>
         <next>
-          <block type="robot_delay" id="104" inline="true">
+          <block type="robot_delay" id="4" inline="true">
             <value name="DELAY">
-              <block type="math_number" id="105">
+              <block type="math_number" id="5">
                 <field name="NUM">2500</field>
               </block>
             </value>
             <next>
-              <block type="variables_set" id="14" inline="true">
+              <block type="variables_set" id="6" inline="true">
                 <field name="VAR">i</field>
                 <value name="VALUE">
-                  <block type="math_number" id="21">
+                  <block type="math_number" id="7">
                     <field name="NUM">0</field>
                   </block>
                 </value>
                 <next>
-                  <block type="controls_whileUntil" id="27" inline="false">
+                  <block type="controls_whileUntil" id="8" inline="false">
                     <field name="MODE">WHILE</field>
                     <value name="NUMBER">
-                      <block type="logic_compare" id="39" inline="true">
+                      <block type="logic_compare" id="9" inline="true">
                         <field name="OP">LT</field>
                         <value name="A">
-                          <block type="variables_get" id="50">
+                          <block type="variables_get" id="10">
                             <field name="VAR">i</field>
                           </block>
                         </value>
                         <value name="B">
-                          <block type="math_number" id="57">
+                          <block type="math_number" id="11">
                             <field name="NUM">10</field>
                           </block>
                         </value>
                       </block>
                     </value>
                     <statement name="DO">
-                      <block type="expansion_elevation" id="87" inline="true">
+                      <block type="expansion_elevation" id="12" inline="true">
                         <value name="NUMBER">
-                          <block type="math_arithmetic" id="117" inline="true">
+                          <block type="math_arithmetic" id="13" inline="true">
                             <field name="OP">ADD</field>
                             <value name="A">
-                              <block type="math_arithmetic" id="88" inline="true">
+                              <block type="math_arithmetic" id="14" inline="true">
                                 <field name="OP">MULTIPLY</field>
                                 <value name="A">
-                                  <block type="variables_get" id="89">
+                                  <block type="variables_get" id="15">
                                     <field name="VAR">i</field>
                                   </block>
                                 </value>
                                 <value name="B">
-                                  <block type="math_number" id="90">
+                                  <block type="math_number" id="16">
                                     <field name="NUM">5</field>
                                   </block>
                                 </value>
                               </block>
                             </value>
                             <value name="B">
-                              <block type="math_number" id="124">
+                              <block type="math_number" id="17">
                                 <field name="NUM">25</field>
                               </block>
                             </value>
                           </block>
                         </value>
                         <next>
-                          <block type="robot_delay" id="92" inline="true">
+                          <block type="robot_delay" id="18" inline="true">
                             <value name="DELAY">
-                              <block type="math_number" id="99">
+                              <block type="math_number" id="19">
                                 <field name="NUM">500</field>
                               </block>
                             </value>
                             <next>
-                              <block type="variables_set" id="62" inline="true">
+                              <block type="variables_set" id="20" inline="true">
                                 <field name="VAR">i</field>
                                 <value name="VALUE">
-                                  <block type="math_arithmetic" id="69" inline="true">
+                                  <block type="math_arithmetic" id="21" inline="true">
                                     <field name="OP">ADD</field>
                                     <value name="A">
-                                      <block type="variables_get" id="74">
+                                      <block type="variables_get" id="22">
                                         <field name="VAR">i</field>
                                       </block>
                                     </value>
                                     <value name="B">
-                                      <block type="math_number" id="81">
+                                      <block type="math_number" id="23">
                                         <field name="NUM">1</field>
                                       </block>
                                     </value>
