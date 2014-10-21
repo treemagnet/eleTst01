@@ -28,7 +28,7 @@
                     <field name="MODE">WHILE</field>
                     <value name="NUMBER">
                       <block type="logic_compare" id="39" inline="true">
-                        <field name="OP">LTE</field>
+                        <field name="OP">LT</field>
                         <value name="A">
                           <block type="variables_get" id="50">
                             <field name="VAR">i</field>
@@ -44,16 +44,26 @@
                     <statement name="DO">
                       <block type="expansion_elevation" id="87" inline="true">
                         <value name="NUMBER">
-                          <block type="math_arithmetic" id="88" inline="true">
-                            <field name="OP">MULTIPLY</field>
+                          <block type="math_arithmetic" id="117" inline="true">
+                            <field name="OP">ADD</field>
                             <value name="A">
-                              <block type="variables_get" id="89">
-                                <field name="VAR">i</field>
+                              <block type="math_arithmetic" id="88" inline="true">
+                                <field name="OP">MULTIPLY</field>
+                                <value name="A">
+                                  <block type="variables_get" id="89">
+                                    <field name="VAR">i</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="math_number" id="90">
+                                    <field name="NUM">5</field>
+                                  </block>
+                                </value>
                               </block>
                             </value>
                             <value name="B">
-                              <block type="math_number" id="90">
-                                <field name="NUM">10</field>
+                              <block type="math_number" id="124">
+                                <field name="NUM">25</field>
                               </block>
                             </value>
                           </block>
